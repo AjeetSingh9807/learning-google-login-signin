@@ -4,6 +4,7 @@ import React from 'react'
 import { getDatabase, ref, set } from "firebase/database";
 import { app } from '@/app/firebaseConnect';
 import { useRouter } from 'next/navigation';
+
 function Button() {
     const getDB = getDatabase(app)
     const route = useRouter()
