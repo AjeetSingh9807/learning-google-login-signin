@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAkVMIFQSoqWsmxUzDSRRYiaacyNn3R5Bo",
-  authDomain: "app-1b8f1.firebaseapp.com",
-  projectId: "app-1b8f1",
-  storageBucket: "app-1b8f1.firebasestorage.app",
-  messagingSenderId: "866490687994",
-  appId: "1:866490687994:web:0bcbc5cde6a7dddd208443",
-  databaseUrl:"https://app-1b8f1-default-rtdb.firebaseio.com"
+  apiKey: process.env.NEXT_NEXT_PUBLIC_apiKey,
+  authDomain: process.env.NEXT_NEXT_PUBLIC_authDomain,
+  projectId: process.env.NEXT_NEXT_PUBLIC_projectId,
+  storageBucket: process.env.NEXT_NEXT_PUBLIC_storageBucket,
+  messagingSenderId: process.env.NEXT_NEXT_PUBLIC_messagingSenderId,
+  appId: process.env.NEXT_NEXT_PUBLIC_appId,
+  databaseUrl: process.env.NEXT_NEXT_PUBLIC_databaseUrl,
 };
 
 // Initialize Firebase
